@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Calendar, Filter, Search, Clock, Utensils, Camera, TrendingUp, Eye, RotateCcw } from "lucide-react";
+import BottomNavigation from "@/components/BottomNavigation";
 
 interface FoodEntry {
   id: string;
@@ -189,7 +190,7 @@ export default function History() {
                     : 'bg-card text-text-secondary border border-nutrition-border hover:bg-muted'
                 }`}
               >
-                {filter === 'all' ? '🍽️ All' : `${mealEmojis[filter]} ${filter.charAt(0).toUpperCase() + filter.slice(1)}`}
+                {filter === 'all' ? '��️ All' : `${mealEmojis[filter]} ${filter.charAt(0).toUpperCase() + filter.slice(1)}`}
               </button>
             ))}
           </div>
@@ -378,6 +379,7 @@ export default function History() {
           </div>
         )}
       </div>
+      <BottomNavigation />
     </div>
   );
 }
