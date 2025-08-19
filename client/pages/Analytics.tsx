@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TrendingUp, Calendar, Target, Award, ChevronRight, Utensils, Zap } from "lucide-react";
+import BottomNavigation from "@/components/BottomNavigation";
 
 interface NutritionTrend {
   date: string;
@@ -266,6 +267,7 @@ export default function Analytics() {
           </div>
         </div>
       </div>
+      <BottomNavigation />
     </div>
   );
 }
