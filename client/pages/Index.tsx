@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NutritionCard from "@/components/NutritionCard";
+import BottomNavigation from "@/components/BottomNavigation";
 import { Camera, Upload, Utensils, TrendingUp, Calendar, User, Zap, Target, Award } from "lucide-react";
 
 interface NutritionData {
@@ -198,35 +199,7 @@ export default function Index() {
         </div>
       </div>
 
-      {/* Bottom Navigation with proper routing */}
-      <div className="fixed bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-t border-nutrition-border px-6 py-3 shadow-lg">
-        <div className="flex justify-around items-center max-w-md mx-auto">
-          <button className="flex flex-col items-center space-y-1 py-2">
-            <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center shadow-sm">
-              <div className="w-3 h-3 bg-primary-foreground rounded-full"></div>
-            </div>
-            <span className="text-xs text-primary font-semibold">Home</span>
-          </button>
-          <Link to="/analytics" className="flex flex-col items-center space-y-1 py-2 hover:scale-105 transition-transform">
-            <div className="w-8 h-8 rounded-xl bg-muted flex items-center justify-center">
-              <TrendingUp className="w-5 h-5 text-text-secondary" />
-            </div>
-            <span className="text-xs text-text-secondary">Analytics</span>
-          </Link>
-          <Link to="/history" className="flex flex-col items-center space-y-1 py-2 hover:scale-105 transition-transform">
-            <div className="w-8 h-8 rounded-xl bg-muted flex items-center justify-center">
-              <Calendar className="w-5 h-5 text-text-secondary" />
-            </div>
-            <span className="text-xs text-text-secondary">History</span>
-          </Link>
-          <Link to="/profile" className="flex flex-col items-center space-y-1 py-2 hover:scale-105 transition-transform">
-            <div className="w-8 h-8 rounded-xl bg-muted flex items-center justify-center">
-              <User className="w-5 h-5 text-text-secondary" />
-            </div>
-            <span className="text-xs text-text-secondary">Profile</span>
-          </Link>
-        </div>
-      </div>
+      <BottomNavigation />
 
       {/* Add bottom padding to account for fixed navigation */}
       <div className="h-20"></div>
