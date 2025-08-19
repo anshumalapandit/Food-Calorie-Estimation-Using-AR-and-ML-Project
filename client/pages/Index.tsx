@@ -58,8 +58,8 @@ export default function Index() {
       <div className="px-6 py-6">
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="text-3xl font-bold text-text-primary mb-2">NutriScan</h1>
-            <p className="text-text-secondary">Analyze your food nutrition instantly</p>
+            <h1 className="text-3xl font-bold text-text-primary mb-2">calARieScan</h1>
+            <p className="text-text-secondary">AR-powered calorie estimation</p>
           </div>
           <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
             <User className="w-6 h-6 text-primary-foreground" />
@@ -105,8 +105,8 @@ export default function Index() {
                 <Camera className="w-6 h-6" />
               </div>
               <div className="text-left">
-                <h3 className="text-lg font-semibold">Scan Food</h3>
-                <p className="text-primary-foreground/80 text-sm">Take a photo to analyze nutrition</p>
+                <h3 className="text-lg font-semibold">AR Food Scanner</h3>
+                <p className="text-primary-foreground/80 text-sm">Real-time AR calorie detection</p>
               </div>
             </div>
             <div className="w-8 h-8 bg-primary-foreground/20 rounded-full flex items-center justify-center">
