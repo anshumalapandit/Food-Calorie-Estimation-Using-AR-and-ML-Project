@@ -430,6 +430,7 @@ export default function Profile() {
           </div>
         )}
       </div>
+      <BottomNavigation />
     </div>
   );
 }
