@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { User, Settings, Target, Award, TrendingUp, Bell, Shield, HelpCircle, LogOut, Edit3, Camera, Share2 } from "lucide-react";
+import BottomNavigation from "@/components/BottomNavigation";
 
 interface UserStats {
   totalScans: number;
