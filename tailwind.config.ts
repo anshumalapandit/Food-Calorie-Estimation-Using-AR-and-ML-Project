@@ -57,6 +57,19 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Nutrition app specific colors
+        nutrition: {
+          bg: "hsl(var(--nutrition-bg))",
+          card: "hsl(var(--nutrition-card))",
+          border: "hsl(var(--nutrition-border))",
+        },
+        carb: "hsl(var(--carb-color))",
+        protein: "hsl(var(--protein-color))",
+        fat: "hsl(var(--fat-color))",
+        text: {
+          primary: "hsl(var(--text-primary))",
+          secondary: "hsl(var(--text-secondary))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
